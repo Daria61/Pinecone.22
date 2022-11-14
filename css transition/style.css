@@ -1,0 +1,36 @@
+.container{
+    width: 500px;
+    height: 600px;
+    box-shadow: 5px  10px 8px 10px #888;
+    margin: 10px auto;
+    position: relative;
+}
+.hover{
+    position:absolute;
+    bottom: 20px;
+    left: 220px;
+}
+.ball{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 100%;
+}
+.normal{
+    background-color:blue ;
+    z-index: 1;
+    top: 0;
+}
+.example1{
+    background-color: red;
+    z-index: -1;
+    bottom: 0;
+}
+.example2{
+    background-color: green;
+    z-index: 0;
+    right: 0;
+}
+.ball-name{
+   
+}
