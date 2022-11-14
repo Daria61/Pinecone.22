@@ -1,0 +1,61 @@
+.container{
+    width: 500px;
+    height: 600px;
+    box-shadow: 5px  10px 8px 10px #888;
+    margin: 10px auto;
+    position: relative;
+}
+.hover{
+    position:absolute;
+    bottom: 20px;
+    left: 220px;
+}
+.ball{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 100%;
+    top: 250px;
+    left: 200px;
+}
+.normal{
+    background-color:blue ;
+    z-index: 2;
+    transition-duration: 0.8s;
+    transition-property: all;
+    transition-timing-function: linear ;
+}
+.example1{
+    background-color: red;
+    z-index: 1;
+    transition-property: bottom, right ;
+    transition-duration: 1.5s;
+    transition-timing-function: linear;
+    right: 0;
+}
+.example2{
+    background-color: green;
+    z-index: -1;
+    transition-duration: 1.0s;
+    transition-property: top , right, color, all;
+    transition-timing-function: linear;
+}
+.ball-name{
+   margin-top: 35px;
+   margin-left: 20px;
+   color: #fff;
+}
+.container:hover .normal{
+    top: 0; 
+    left: 0;
+}
+.container:hover .example1{
+    bottom: 0;
+    right: 0;
+}
+.container:hover .example2{
+    top: 0;
+    right: 0;
+    color: orange;
+    border-radius: 0;
+}

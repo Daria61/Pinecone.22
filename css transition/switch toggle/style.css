@@ -1,0 +1,29 @@
+body{
+    box-sizing: border-box;
+}
+div{
+    margin: auto;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    width: 50px;
+    height: 25px;
+    background-color: rgb(103, 101, 101);
+    position: relative;
+}
+input{
+   width: 25px;
+   height: 25px;
+}
+.ball{
+    background-color: #fff;
+    border-radius: 100px;
+    width: 25px;
+    height: 23px;
+    position: absolute;
+}
+input:checked + .ball{
+     right: 0;
+}
+label{
+    background-color: blue;
+}
