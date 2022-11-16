@@ -43,11 +43,15 @@ body{
     z-index: 1;
     bottom: 200px;
     right: 250px;
-    transition-duration: 1.0s;
-    transition-property: bottom ;
+    transition-delay: 0.2s, 0.5s;
+    transition-duration: 1.0s, 0.5s;
+    transition-property: bottom, right ;
+
 }
 .container:hover .example1{
     bottom: 0;
+    right: 0;
+
 }
 .example2{
     background-color: red;
